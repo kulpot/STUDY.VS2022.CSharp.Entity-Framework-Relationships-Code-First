@@ -49,30 +49,34 @@ class Video
     public string Description { get; set; }
 }
 
-class MeContext : DbContext
+class MeContext : DbContext     // PipeLine --SQLServer and VS-- Schema
 {
     //public MeContext() : base(@"Data Source=.;Initial Catalog=MyTestDb;username = whateverUsername;password = yadayadayada")
     public MeContext() : base(@"Data Source=.;Initial Catalog=MyTestDb;Integrated Security=True")
     {
     }
     public DbSet<Video> Videos { get; set; }
+    public DbSet<PlayList> Playlists { get; set; }
+
 }
 
 class MainClass
 {
     static void Main()
     {
-        MeContext db = new MeContext();
-        db.Database.Delete();
+        MeContext db = new MeContext(); // Pipeline to VS and EntityFramework SQLServer app
+
+        //db.Database.Delete();
         Video meVideo = new Video
         {
             Title = "Hello World Entity Framework",
             Description = "Learn the entity framework"
         };
-        PlayList mePlaylist = new PlayList();
-        mePlaylist.Title = "Entity Framework";
-
-        mePlaylist.Videos = new List<Video> { meVideo };
+        db.Videos.Add(meVideo);
+        //PlayList mePlaylist = new PlayList();
+        //mePlaylist.Title = "Entity Framework";
+        //
+        //mePlaylist.Videos = new List<Video> { meVideo };
 
 
 
