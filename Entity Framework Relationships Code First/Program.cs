@@ -71,7 +71,8 @@ class MainClass
         };
         PlayList mePlaylist = new PlayList();
         mePlaylist.Title = "Entity Framework";
-        myPlaylist.Videos.Add(meVideo);
+
+        mePlaylist.Videos = new List<Video> { meVideo };
 
 
 
