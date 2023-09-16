@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity Framework Relationships Code First", "Entity Framework Relationships Code First\Entity Framework Relationships Code First.csproj", "{CEA6E0CD-90D3-4C8D-A844-6758A8DB552B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEA6E0CD-90D3-4C8D-A844-6758A8DB552B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA6E0CD-90D3-4C8D-A844-6758A8DB552B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA6E0CD-90D3-4C8D-A844-6758A8DB552B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA6E0CD-90D3-4C8D-A844-6758A8DB552B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AE1096F-F869-4BBF-B349-B17C78F1763D}
+	EndGlobalSection
+EndGlobal
